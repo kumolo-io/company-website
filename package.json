@@ -1,0 +1,27 @@
+{
+  "name": "kumolo-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"no tests\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kumolo-io/company-website.git"
+  },
+  "keywords": [
+    "Kumolo",
+    "website"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kumolo-io/company-website/issues"
+  },
+  "engines": {
+    "node": "8.11.1",
+    "npm": "5.6.0"
+  },
+  "homepage": "https://github.com/kumolo-io/company-website#readme"
+}
