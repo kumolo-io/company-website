@@ -10,6 +10,16 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 app.use(bodyParser.json());
 
+// Force HTTPS
+server.use(function(req, res, next) {
+    if (process.env.HEROKU_APP_NAME && ! (req.secure || req.headers['x-forwarded-proto'] === 'https')) {
+        var secureUrl = "https://" + req.headers['host'] + req.url;
+        res.writeHead(301, { "Location":  secureUrl });
+        res.end();
+    }
+    next();
+});
+
 app.post('/api/contact', (req, res) => {
     console.log('Incoming contact request', req.body);
 
