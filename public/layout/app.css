@@ -143,6 +143,11 @@ a.dark {
     background: #ffffff url('./images/office-line.png') no-repeat top right;
 }
 
+.contact-us-form {
+    width: 50%;
+    margin: auto;
+}
+
 
 @media screen and (max-width: 1200px) {
     .contact-us {
@@ -170,8 +175,34 @@ a.dark {
         width: 500px;
         font-size: 14px;
     }
+
+
+    .contact-us-form {
+        width: 90%;
+    }
 }
 
+
+@media screen and (max-width: 400px) {
+    .offices {
+        width: 300px;
+    }
+
+    .contact-us {
+        width: 300px;
+    }
+
+    .tagline {
+        width: 300px;
+        font-size: 25px;
+
+    }
+
+    .copy {
+        width: 300px;
+        font-size: 14px;
+    }
+}
 
 
 .offices-header {
@@ -239,10 +270,6 @@ a.dark {
     margin: 0 auto 10px auto;
 }
 
-.contact-us-form {
-    width: 450px;
-    margin: auto;
-}
 
 .form-row label {
     width: 48px;
