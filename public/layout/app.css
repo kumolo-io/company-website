@@ -107,14 +107,24 @@ a.dark {
 }
 
 .main-copy {
+    background-image: url('./images/bg-left.png'), url('./images/bg-right-top.png');
+    background-position: top left, bottom right;
+    background-repeat: no-repeat, no-repeat;
     margin-top: 120px;
+    padding-bottom: 70px;
+}
+
+.contact-us-container {
+    background-image: url('./images/bg-right-bottom.png');
+    background-position: right center;
+    background-repeat: no-repeat;
 }
 
 .contact-us {
     background-image: url('./images/contact-us-line-topright.png'), url('./images/contact-us-line-bottomleft.png');
     background-position: top right, bottom left;
     background-repeat: no-repeat, no-repeat;
-    margin: 70px auto 0 auto;
+    margin: 0 auto 0 auto;
     width: 1080px;
     height: 590px;
     background-color: #ffffff;
