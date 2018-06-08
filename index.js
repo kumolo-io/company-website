@@ -26,7 +26,7 @@ app.post('/api/contact', (req, res) => {
     const msg = {
         to: 'info@kumolo.io',
         from: req.body.email,
-        subject: 'A message from kumolo.io (' + process.env.HEROKU_APP_NAME + ')',
+        subject: 'A message from kumolo.io, sent by "' + req.body.name + '" (App: ' + process.env.HEROKU_APP_NAME + ')',
         text: req.body.message
     };
 

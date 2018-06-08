@@ -5,6 +5,7 @@ body {
     padding: 0;
 
     font-family: Lato;
+    color: #4b484c;
 }
 
 a.dark {
@@ -14,15 +15,10 @@ a.dark {
 .tagline {
     margin: auto;
     width: 700px;
-    height: 109px;
     font-family: Rubik;
     font-size: 40px;
     font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
     line-height: 1.5;
-    letter-spacing: normal;
-    text-align: left;
     color: #4c494c;
 
 }
@@ -30,13 +26,8 @@ a.dark {
 .copy {
     margin: 2em auto;
     width: 700px;
-    height: 232px;
     font-size: 18px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
     line-height: 1.67;
-    letter-spacing: normal;
     text-align: justify;
     color: #4c494c;
 }
@@ -60,10 +51,8 @@ a.dark {
     margin: 0;
     width: 100%;
     text-align: center;
-    background-image: url('./images/header.png');
-    background-repeat: no-repeat;
     background-size: 100% auto;
-    background-position: top;
+    background: url('./images/header.png') no-repeat top;
     height: 310px;
 }
 
@@ -72,14 +61,9 @@ a.dark {
     width: 312px;
     height: 41px;
     font-family: Rubik;
-    font-stretch: normal;
-    letter-spacing: normal;
-    font-style: normal;
     font-size: 33px;
     font-weight: 300;
     line-height: 1.21;
-    text-align: left;
-    color: #4b484c;
 }
 
 .logo {
@@ -94,49 +78,27 @@ a.dark {
     box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
-.tagbox-1-copy {
+.tagbox-copy {
     margin: auto;
-    width: 256px;
     height: 57px;
     font-family: Rubik;
     font-size: 22px;
     font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
     line-height: 1.36;
-    letter-spacing: normal;
     text-align: center;
     color: #4c494c;
+}
+
+.tagbox-1-copy {
+    width: 256px;
 }
 
 .tagbox-2-copy {
-    margin: auto;
     width: 214px;
-    height: 57px;
-    font-family: Rubik;
-    font-size: 22px;
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.36;
-    letter-spacing: normal;
-    text-align: center;
-    color: #4c494c;
 }
 
 .tagbox-3-copy {
-    margin: auto;
     width: 152px;
-    height: 57px;
-    font-family: Rubik;
-    font-size: 22px;
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.36;
-    letter-spacing: normal;
-    text-align: center;
-    color: #4c494c;
 }
 
 .tagbox-image {
@@ -152,7 +114,7 @@ a.dark {
     background-image: url('./images/contact-us-line-topright.png'), url('./images/contact-us-line-bottomleft.png');
     background-position: top right, bottom left;
     background-repeat: no-repeat, no-repeat;
-    margin: auto;
+    margin: 70px auto 0 auto;
     width: 1080px;
     height: 590px;
     background-color: #ffffff;
@@ -174,20 +136,43 @@ a.dark {
     color: #4c494c;
 }
 
-.contact-us-text {
-
-}
-
 .offices {
     margin: 120px auto 61px auto;
     width: 750px;
-    height: 299px;
-    background-color: #ffffff;
     box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
-    background-image: url('./images/office-line.png');
-    background-position: top right;
-    background-repeat: no-repeat;
+    background: #ffffff url('./images/office-line.png') no-repeat top right;
 }
+
+
+@media screen and (max-width: 1200px) {
+    .contact-us {
+        width: 750px;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .offices {
+        width: 450px;
+    }
+
+    .contact-us {
+        width: 550px;
+    }
+
+    .tagline {
+        width: 500px;
+        font-size: 35px;
+
+    }
+
+    .copy {
+        width: 500px;
+        font-size: 14px;
+    }
+}
+
+
 
 .offices-header {
     margin: 42px auto;
@@ -196,10 +181,7 @@ a.dark {
     font-family: Rubik;
     font-size: 31px;
     font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
     line-height: 1.19;
-    letter-spacing: normal;
     text-align: center;
     color: #4c494c;
 }
@@ -230,24 +212,16 @@ a.dark {
     font-family: Rubik;
     font-size: 18px;
     font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
     line-height: 1.22;
-    letter-spacing: normal;
     text-align: center;
-    color: #4b484c;
 }
 
 .office-address {
     margin: 8px auto;
     font-size: 14px;
     font-weight: 300;
-    font-style: normal;
-    font-stretch: normal;
     line-height: 1.21;
-    letter-spacing: normal;
     text-align: center;
-    color: #4b484c;
 }
 
 .office {
@@ -257,10 +231,8 @@ a.dark {
 .footer {
     display: flex;
     flex-direction: column;
-    background-image: url('./images/footer.png');
-    background-repeat: no-repeat;
     background-size: 100% auto;
-    background-position: bottom;
+    background: url('./images/footer.png') no-repeat bottom;
 }
 
 .footer-text {
@@ -277,11 +249,7 @@ a.dark {
     height: 22px;
     font-size: 18px;
     font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
     line-height: 1.28;
-    letter-spacing: normal;
-    text-align: left;
     color: #4c494c;
 }
 
