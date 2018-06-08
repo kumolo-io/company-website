@@ -23,5 +23,8 @@
     "node": "8.11.1",
     "npm": "5.6.0"
   },
-  "homepage": "https://github.com/kumolo-io/company-website#readme"
+  "homepage": "https://github.com/kumolo-io/company-website#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
 }

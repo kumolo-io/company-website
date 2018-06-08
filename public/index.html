@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="./layout/fonts.css" />
+
+    <style type="text/css">
+
+        body {
+            background-color: #F2F2F2;
+            margin: 0;
+            padding: 0;
+
+            font-family: Lato;
+        }
+
+        a.dark {
+            color: #4C494C;
+        }
+
+        .tagline {
+            margin: auto;
+            width: 700px;
+            height: 109px;
+            font-family: Rubik;
+            font-size: 40px;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.5;
+            letter-spacing: normal;
+            text-align: left;
+            color: #4c494c;
+
+        }
+
+        .copy {
+            margin: 2em auto;
+            width: 700px;
+            height: 232px;
+            font-size: 18px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.67;
+            letter-spacing: normal;
+            text-align: justify;
+            color: #4c494c;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+        .tagboxes {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .header {
+            margin: 0;
+            width: 100%;
+            text-align: center;
+            background-image: url('./layout/images/header.png');
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            background-position: top;
+            height: 310px;
+        }
+
+        .moto {
+            margin: 10px auto;
+            width: 312px;
+            height: 41px;
+            font-family: Rubik;
+            font-stretch: normal;
+            letter-spacing: normal;
+            font-style: normal;
+            font-size: 33px;
+            font-weight: 300;
+            line-height: 1.21;
+            text-align: left;
+            color: #4b484c;
+        }
+
+        .logo {
+            padding-top: 105px;
+        }
+
+        .tagbox {
+            margin: 10px 1em 0 1em;
+            width: 340px;
+            height: 226px;
+            background-color: #ffffff;
+            box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        .tagbox-1-copy {
+            margin: auto;
+            width: 256px;
+            height: 57px;
+            font-family: Rubik;
+            font-size: 22px;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.36;
+            letter-spacing: normal;
+            text-align: center;
+            color: #4c494c;
+        }
+
+        .tagbox-2-copy {
+            margin: auto;
+            width: 214px;
+            height: 57px;
+            font-family: Rubik;
+            font-size: 22px;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.36;
+            letter-spacing: normal;
+            text-align: center;
+            color: #4c494c;
+        }
+
+        .tagbox-3-copy {
+            margin: auto;
+            width: 152px;
+            height: 57px;
+            font-family: Rubik;
+            font-size: 22px;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.36;
+            letter-spacing: normal;
+            text-align: center;
+            color: #4c494c;
+        }
+
+        .tagbox-image {
+            display: block;
+            margin: 39px auto;
+        }
+
+        .main-copy {
+            margin-top: 120px;
+        }
+
+        .contact-us {
+            background-image: url('./layout/images/contact-us-line-topright.png'), url('./layout/images/contact-us-line-bottomleft.png');
+            background-position: top right, bottom left;
+            background-repeat: no-repeat, no-repeat;
+            margin: auto;
+            width: 1080px;
+            height: 590px;
+            background-color: #ffffff;
+            box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-us-header {
+            margin: 42px auto;
+            width: 176px;
+            height: 38px;
+            font-family: Rubik;
+            font-size: 31px;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.19;
+            letter-spacing: normal;
+            text-align: center;
+            color: #4c494c;
+        }
+
+        .contact-us-text {
+
+        }
+
+        .offices {
+            margin: 120px auto 61px auto;
+            width: 750px;
+            height: 299px;
+            background-color: #ffffff;
+            box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+            background-image: url('./layout/images/office-line.png');
+            background-position: top right;
+            background-repeat: no-repeat;
+        }
+
+        .offices-header {
+            margin: 42px auto;
+            width: 176px;
+            height: 38px;
+            font-family: Rubik;
+            font-size: 31px;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.19;
+            letter-spacing: normal;
+            text-align: center;
+            color: #4c494c;
+        }
+
+        .offices-list {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .office-logo-container {
+            height: 32px;
+            align-items: flex-end;
+            display: flex;
+        }
+
+        .office-logo-container img {
+            margin: auto auto 0 auto;
+            display: block;
+
+        }
+
+        .office-text {
+            margin: 20px auto;
+            width: 89px;
+            height: 22px;
+            font-family: Rubik;
+            font-size: 18px;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.22;
+            letter-spacing: normal;
+            text-align: center;
+            color: #4b484c;
+        }
+
+        .office-address {
+            margin: 8px auto;
+            font-size: 14px;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.21;
+            letter-spacing: normal;
+            text-align: center;
+            color: #4b484c;
+        }
+
+        .office {
+            margin: 10px 80px;
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: column;
+            background-image: url('./layout/images/footer.png');
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            background-position: bottom;
+        }
+
+        .footer-text {
+            margin: 0 auto 10px auto;
+        }
+
+        .contact-us-form {
+            width: 450px;
+            margin: auto;
+        }
+
+        .form-row label {
+            width: 48px;
+            height: 22px;
+            font-size: 18px;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.28;
+            letter-spacing: normal;
+            text-align: left;
+            color: #4c494c;
+        }
+
+        .form-row, .form-button-row {
+            margin-top: 1em;
+        }
+
+        .form-row input, .form-row textarea {
+            padding: 3px;
+            width: 100%;
+            font-size: 16px;
+            border-radius: 6px;
+            background-color: #f6f6f6;
+            color: #000000;
+            border: 1px solid #f6f6f6;
+        }
+
+        .contact-us-submit-button {
+            width: 103px;
+            height: 40px;
+            border-radius: 150px;
+            background-image: linear-gradient(to left, #fdef37, #f2cb15);
+            font-family: Rubik;
+            font-size: 16px;
+            font-weight: 500;
+            color: #4c494c;
+            border-width: 0;
+            cursor: pointer;
+
+        }
+    </style>
+
+    <title>Kumolo - Salesforce Heroku App Builders</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="./layout/images/logo.png" width="303" height="80" />
+            <p class="moto">Heroku App Builders</p>
+        </div>
+    </div>
+    <div class="tagboxes">
+        <div class="tagbox">
+            <img class="tagbox-image" src="./layout/images/mobile.png" width="39" height="60" />
+            <p class="tagbox-1-copy">
+                Engage your customers with tailor made apps.
+            </p>
+
+        </div>
+        <div class="tagbox">
+            <img class="tagbox-image" src="./layout/images/time.png" width="60" height="60" />
+            <p class="tagbox-2-copy">Reduce your time to market.</p>
+        </div>
+        <div class="tagbox">
+            <img class="tagbox-image" src="./layout/images/cloud.png" width="85" height="60" />
+            <p class="tagbox-3-copy"> Jump into the cloud. </p>
+        </div>
+    </div>
+    <div class="container column main-copy">
+        <p class="tagline">At KUMOLO, we are experts in building the apps that you need.</p>
+        <p class="copy">As official Salesforce Heroku partner, we have all the know-how to get your organisation jump started in the
+            cloud without having to worry about managing low level infrastructure. Integrating your Salesforce environment with rich, custom applications has never been easier.
+            Together we can build great things, so have a look at our reference cases on how we’ve helped our clients engage their customers and extend their CRM!</p>
+    </div>
+    <div class="container">
+        <div class="contact-us">
+            <p class="contact-us-header">Contact us</p>
+            <div class="contact-us-form">
+                <form>
+                    <p class="contact-us-text">E-mail us at <a href="mailto:info@kumolo.io" class="dark">info@kumolo.io</a> or fill in the form below. </p>
+                    <div class="form-row">
+                        <label for="name">Name</label> <br />
+                        <input type="text" name="name" id="name" placeholder="Full name" />
+                    </div>
+                    <div class="form-row">
+                        <label for="email">E-mail</label> <br />
+                        <input type="text" name="email" id="email" placeholder="me@contact.me" />
+                    </div>
+                    <div class="form-row">
+                        <label for="message">Message</label> <br />
+                        <textarea name="message" id="message" rows="10" placeholder="Let's meet!"></textarea>
+                    </div>
+                    <div class="form-button-row">
+                        <input class="contact-us-submit-button" type="submit" value="Send" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="offices">
+            <p class="offices-header">Offices</p>
+            <div class="offices-list">
+                <div class="office">
+                    <div class="office-logo-container">
+                        <img src="./layout/images/merelbeke.png" width="40" height="32" />
+                    </div>
+                    <p class="office-text">Merelbeke</p>
+                    <p class="office-address">Guldensporenpark Building I<br />9820 Merelbeke</p>
+                </div>
+                <div class="office">
+                    <div class="office-logo-container">
+                        <img src="./layout/images/kontich.png" width="40" height="15" />
+                    </div>
+                    <p class="office-text">Kontich</p>
+                    <p class="office-address">Veldkant 33A<br />2550 Kontich</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-text">
+            &copy; 2018 Kumolo. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>
